@@ -35,24 +35,6 @@
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             label40 = new Label();
-            label39 = new Label();
-            tableLayoutPanel3 = new TableLayoutPanel();
-            lblTable_Rafd_Type2_8 = new Label();
-            lblTable_Rafd_Type2_1 = new Label();
-            lblTable_Rafd_Type2_2 = new Label();
-            lblTable_Rafd_Type2_7 = new Label();
-            lblTable_Rafd_Type2_3 = new Label();
-            lblTable_Rafd_Type2_6 = new Label();
-            lblTable_Rafd_Type2_5 = new Label();
-            lblTable_Rafd_Type2_4 = new Label();
-            lblTable_Rak_Type2_6 = new Label();
-            lblTable_Rak_Type2_3 = new Label();
-            lblTable_Rak_Type2_4 = new Label();
-            lblTable_Rak_Type2_5 = new Label();
-            lblTable_Rak_Type2_8 = new Label();
-            lblTable_Rak_Type2_7 = new Label();
-            lblTable_Rak_Type2_2 = new Label();
-            lblTable_Rak_Type2_1 = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
             lblTable_Rafd_7 = new Label();
             lblTable_Rak_4 = new Label();
@@ -105,7 +87,6 @@
             numericRak = new NumericUpDown();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
-            tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tabPage2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -118,11 +99,11 @@
             // 
             richTBRak.BackColor = Color.Lime;
             richTBRak.Font = new Font("Vazirmatn RD FD", 12F);
-            richTBRak.Location = new Point(727, 42);
+            richTBRak.Location = new Point(371, 42);
             richTBRak.Margin = new Padding(3, 4, 3, 4);
             richTBRak.Name = "richTBRak";
             richTBRak.RightToLeft = RightToLeft.Yes;
-            richTBRak.Size = new Size(489, 40);
+            richTBRak.Size = new Size(699, 40);
             richTBRak.TabIndex = 0;
             richTBRak.Text = "رضا مهدیه";
             // 
@@ -140,13 +121,14 @@
             // label1
             // 
             label1.Font = new Font("Vazirmatn RD", 9.75F);
-            label1.Location = new Point(1029, 7);
+            label1.Location = new Point(849, 7);
             label1.Name = "label1";
             label1.RightToLeft = RightToLeft.Yes;
-            label1.Size = new Size(187, 32);
+            label1.Size = new Size(221, 32);
             label1.TabIndex = 2;
-            label1.Text = "متن مورد نظر یا طالب (رک):";
+            label1.Text = "متن مورد نظر یا (رک) نام طالب + نام مادر:";
             label1.TextAlign = ContentAlignment.MiddleLeft;
+            label1.Click += label1_Click;
             // 
             // tabControl1
             // 
@@ -157,14 +139,12 @@
             tabControl1.Location = new Point(0, 0);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(1232, 500);
+            tabControl1.Size = new Size(1094, 500);
             tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
             tabPage1.Controls.Add(label40);
-            tabPage1.Controls.Add(label39);
-            tabPage1.Controls.Add(tableLayoutPanel3);
             tabPage1.Controls.Add(tableLayoutPanel2);
             tabPage1.Controls.Add(label3);
             tabPage1.Controls.Add(lblResult_Sum_Col_Row);
@@ -179,7 +159,7 @@
             tabPage1.Location = new Point(4, 30);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(1224, 466);
+            tabPage1.Size = new Size(1086, 466);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "محاسبه";
             tabPage1.UseVisualStyleBackColor = true;
@@ -187,269 +167,13 @@
             // label40
             // 
             label40.Font = new Font("Vazirmatn RD", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label40.Location = new Point(465, 16);
+            label40.Location = new Point(102, 16);
             label40.Name = "label40";
             label40.RightToLeft = RightToLeft.Yes;
             label40.Size = new Size(159, 32);
             label40.TabIndex = 8;
             label40.Text = "روش اول (احزب وجده)";
             label40.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label39
-            // 
-            label39.Font = new Font("Vazirmatn RD", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label39.Location = new Point(138, 18);
-            label39.Name = "label39";
-            label39.RightToLeft = RightToLeft.Yes;
-            label39.Size = new Size(99, 32);
-            label39.TabIndex = 7;
-            label39.Text = "روش دوم";
-            label39.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel3
-            // 
-            tableLayoutPanel3.BackColor = Color.Transparent;
-            tableLayoutPanel3.CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetDouble;
-            tableLayoutPanel3.ColumnCount = 4;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel3.Controls.Add(lblTable_Rafd_Type2_8, 3, 3);
-            tableLayoutPanel3.Controls.Add(lblTable_Rafd_Type2_1, 2, 3);
-            tableLayoutPanel3.Controls.Add(lblTable_Rafd_Type2_2, 1, 3);
-            tableLayoutPanel3.Controls.Add(lblTable_Rafd_Type2_7, 0, 3);
-            tableLayoutPanel3.Controls.Add(lblTable_Rafd_Type2_3, 3, 2);
-            tableLayoutPanel3.Controls.Add(lblTable_Rafd_Type2_6, 2, 2);
-            tableLayoutPanel3.Controls.Add(lblTable_Rafd_Type2_5, 1, 2);
-            tableLayoutPanel3.Controls.Add(lblTable_Rafd_Type2_4, 0, 2);
-            tableLayoutPanel3.Controls.Add(lblTable_Rak_Type2_6, 3, 1);
-            tableLayoutPanel3.Controls.Add(lblTable_Rak_Type2_3, 2, 1);
-            tableLayoutPanel3.Controls.Add(lblTable_Rak_Type2_4, 1, 1);
-            tableLayoutPanel3.Controls.Add(lblTable_Rak_Type2_5, 0, 1);
-            tableLayoutPanel3.Controls.Add(lblTable_Rak_Type2_8, 2, 0);
-            tableLayoutPanel3.Controls.Add(lblTable_Rak_Type2_7, 1, 0);
-            tableLayoutPanel3.Controls.Add(lblTable_Rak_Type2_2, 0, 0);
-            tableLayoutPanel3.Controls.Add(lblTable_Rak_Type2_1, 3, 0);
-            tableLayoutPanel3.Font = new Font("Vazirmatn RD FD", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tableLayoutPanel3.Location = new Point(371, 53);
-            tableLayoutPanel3.Name = "tableLayoutPanel3";
-            tableLayoutPanel3.RowCount = 4;
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tableLayoutPanel3.Size = new Size(350, 350);
-            tableLayoutPanel3.TabIndex = 6;
-            tableLayoutPanel3.Visible = false;
-            // 
-            // lblTable_Rafd_Type2_8
-            // 
-            lblTable_Rafd_Type2_8.AutoSize = true;
-            lblTable_Rafd_Type2_8.BackColor = Color.Yellow;
-            lblTable_Rafd_Type2_8.Dock = DockStyle.Fill;
-            lblTable_Rafd_Type2_8.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rafd_Type2_8.Location = new Point(264, 261);
-            lblTable_Rafd_Type2_8.Name = "lblTable_Rafd_Type2_8";
-            lblTable_Rafd_Type2_8.Size = new Size(80, 86);
-            lblTable_Rafd_Type2_8.TabIndex = 21;
-            lblTable_Rafd_Type2_8.Text = "16";
-            lblTable_Rafd_Type2_8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rafd_Type2_1
-            // 
-            lblTable_Rafd_Type2_1.AutoSize = true;
-            lblTable_Rafd_Type2_1.BackColor = Color.Yellow;
-            lblTable_Rafd_Type2_1.Dock = DockStyle.Fill;
-            lblTable_Rafd_Type2_1.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rafd_Type2_1.Location = new Point(178, 261);
-            lblTable_Rafd_Type2_1.Name = "lblTable_Rafd_Type2_1";
-            lblTable_Rafd_Type2_1.Size = new Size(77, 86);
-            lblTable_Rafd_Type2_1.TabIndex = 20;
-            lblTable_Rafd_Type2_1.Text = "9";
-            lblTable_Rafd_Type2_1.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rafd_Type2_2
-            // 
-            lblTable_Rafd_Type2_2.AutoSize = true;
-            lblTable_Rafd_Type2_2.BackColor = Color.Yellow;
-            lblTable_Rafd_Type2_2.Dock = DockStyle.Fill;
-            lblTable_Rafd_Type2_2.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rafd_Type2_2.Location = new Point(92, 261);
-            lblTable_Rafd_Type2_2.Name = "lblTable_Rafd_Type2_2";
-            lblTable_Rafd_Type2_2.Size = new Size(77, 86);
-            lblTable_Rafd_Type2_2.TabIndex = 19;
-            lblTable_Rafd_Type2_2.Text = "10";
-            lblTable_Rafd_Type2_2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rafd_Type2_7
-            // 
-            lblTable_Rafd_Type2_7.AutoSize = true;
-            lblTable_Rafd_Type2_7.BackColor = Color.Yellow;
-            lblTable_Rafd_Type2_7.Dock = DockStyle.Fill;
-            lblTable_Rafd_Type2_7.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rafd_Type2_7.Location = new Point(6, 261);
-            lblTable_Rafd_Type2_7.Name = "lblTable_Rafd_Type2_7";
-            lblTable_Rafd_Type2_7.Size = new Size(77, 86);
-            lblTable_Rafd_Type2_7.TabIndex = 18;
-            lblTable_Rafd_Type2_7.Text = "15";
-            lblTable_Rafd_Type2_7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rafd_Type2_3
-            // 
-            lblTable_Rafd_Type2_3.AutoSize = true;
-            lblTable_Rafd_Type2_3.BackColor = Color.Yellow;
-            lblTable_Rafd_Type2_3.Dock = DockStyle.Fill;
-            lblTable_Rafd_Type2_3.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rafd_Type2_3.Location = new Point(264, 175);
-            lblTable_Rafd_Type2_3.Name = "lblTable_Rafd_Type2_3";
-            lblTable_Rafd_Type2_3.Size = new Size(80, 83);
-            lblTable_Rafd_Type2_3.TabIndex = 17;
-            lblTable_Rafd_Type2_3.Text = "11";
-            lblTable_Rafd_Type2_3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rafd_Type2_6
-            // 
-            lblTable_Rafd_Type2_6.AutoSize = true;
-            lblTable_Rafd_Type2_6.BackColor = Color.Yellow;
-            lblTable_Rafd_Type2_6.Dock = DockStyle.Fill;
-            lblTable_Rafd_Type2_6.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rafd_Type2_6.Location = new Point(178, 175);
-            lblTable_Rafd_Type2_6.Name = "lblTable_Rafd_Type2_6";
-            lblTable_Rafd_Type2_6.Size = new Size(77, 83);
-            lblTable_Rafd_Type2_6.TabIndex = 16;
-            lblTable_Rafd_Type2_6.Text = "14";
-            lblTable_Rafd_Type2_6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rafd_Type2_5
-            // 
-            lblTable_Rafd_Type2_5.AutoSize = true;
-            lblTable_Rafd_Type2_5.BackColor = Color.Yellow;
-            lblTable_Rafd_Type2_5.Dock = DockStyle.Fill;
-            lblTable_Rafd_Type2_5.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rafd_Type2_5.Location = new Point(92, 175);
-            lblTable_Rafd_Type2_5.Name = "lblTable_Rafd_Type2_5";
-            lblTable_Rafd_Type2_5.Size = new Size(77, 83);
-            lblTable_Rafd_Type2_5.TabIndex = 15;
-            lblTable_Rafd_Type2_5.Text = "13";
-            lblTable_Rafd_Type2_5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rafd_Type2_4
-            // 
-            lblTable_Rafd_Type2_4.AutoSize = true;
-            lblTable_Rafd_Type2_4.BackColor = Color.Yellow;
-            lblTable_Rafd_Type2_4.Dock = DockStyle.Fill;
-            lblTable_Rafd_Type2_4.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rafd_Type2_4.Location = new Point(6, 175);
-            lblTable_Rafd_Type2_4.Name = "lblTable_Rafd_Type2_4";
-            lblTable_Rafd_Type2_4.Size = new Size(77, 83);
-            lblTable_Rafd_Type2_4.TabIndex = 14;
-            lblTable_Rafd_Type2_4.Text = "12";
-            lblTable_Rafd_Type2_4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rak_Type2_6
-            // 
-            lblTable_Rak_Type2_6.AutoSize = true;
-            lblTable_Rak_Type2_6.BackColor = Color.Lime;
-            lblTable_Rak_Type2_6.Dock = DockStyle.Fill;
-            lblTable_Rak_Type2_6.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rak_Type2_6.Location = new Point(264, 89);
-            lblTable_Rak_Type2_6.Name = "lblTable_Rak_Type2_6";
-            lblTable_Rak_Type2_6.Size = new Size(80, 83);
-            lblTable_Rak_Type2_6.TabIndex = 13;
-            lblTable_Rak_Type2_6.Text = "6";
-            lblTable_Rak_Type2_6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rak_Type2_3
-            // 
-            lblTable_Rak_Type2_3.AutoSize = true;
-            lblTable_Rak_Type2_3.BackColor = Color.Lime;
-            lblTable_Rak_Type2_3.Dock = DockStyle.Fill;
-            lblTable_Rak_Type2_3.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rak_Type2_3.Location = new Point(178, 89);
-            lblTable_Rak_Type2_3.Name = "lblTable_Rak_Type2_3";
-            lblTable_Rak_Type2_3.Size = new Size(77, 83);
-            lblTable_Rak_Type2_3.TabIndex = 12;
-            lblTable_Rak_Type2_3.Text = "3";
-            lblTable_Rak_Type2_3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rak_Type2_4
-            // 
-            lblTable_Rak_Type2_4.AutoSize = true;
-            lblTable_Rak_Type2_4.BackColor = Color.Lime;
-            lblTable_Rak_Type2_4.Dock = DockStyle.Fill;
-            lblTable_Rak_Type2_4.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rak_Type2_4.Location = new Point(92, 89);
-            lblTable_Rak_Type2_4.Name = "lblTable_Rak_Type2_4";
-            lblTable_Rak_Type2_4.Size = new Size(77, 83);
-            lblTable_Rak_Type2_4.TabIndex = 11;
-            lblTable_Rak_Type2_4.Text = "4";
-            lblTable_Rak_Type2_4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rak_Type2_5
-            // 
-            lblTable_Rak_Type2_5.AutoSize = true;
-            lblTable_Rak_Type2_5.BackColor = Color.Lime;
-            lblTable_Rak_Type2_5.Dock = DockStyle.Fill;
-            lblTable_Rak_Type2_5.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rak_Type2_5.Location = new Point(6, 89);
-            lblTable_Rak_Type2_5.Name = "lblTable_Rak_Type2_5";
-            lblTable_Rak_Type2_5.Size = new Size(77, 83);
-            lblTable_Rak_Type2_5.TabIndex = 10;
-            lblTable_Rak_Type2_5.Text = "5";
-            lblTable_Rak_Type2_5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rak_Type2_8
-            // 
-            lblTable_Rak_Type2_8.AutoSize = true;
-            lblTable_Rak_Type2_8.BackColor = Color.Lime;
-            lblTable_Rak_Type2_8.Dock = DockStyle.Fill;
-            lblTable_Rak_Type2_8.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rak_Type2_8.Location = new Point(178, 3);
-            lblTable_Rak_Type2_8.Name = "lblTable_Rak_Type2_8";
-            lblTable_Rak_Type2_8.Size = new Size(77, 83);
-            lblTable_Rak_Type2_8.TabIndex = 9;
-            lblTable_Rak_Type2_8.Text = "8";
-            lblTable_Rak_Type2_8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rak_Type2_7
-            // 
-            lblTable_Rak_Type2_7.AutoSize = true;
-            lblTable_Rak_Type2_7.BackColor = Color.Lime;
-            lblTable_Rak_Type2_7.Dock = DockStyle.Fill;
-            lblTable_Rak_Type2_7.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rak_Type2_7.Location = new Point(92, 3);
-            lblTable_Rak_Type2_7.Name = "lblTable_Rak_Type2_7";
-            lblTable_Rak_Type2_7.Size = new Size(77, 83);
-            lblTable_Rak_Type2_7.TabIndex = 8;
-            lblTable_Rak_Type2_7.Text = "7";
-            lblTable_Rak_Type2_7.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rak_Type2_2
-            // 
-            lblTable_Rak_Type2_2.AutoSize = true;
-            lblTable_Rak_Type2_2.BackColor = Color.Lime;
-            lblTable_Rak_Type2_2.Dock = DockStyle.Fill;
-            lblTable_Rak_Type2_2.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rak_Type2_2.Location = new Point(6, 3);
-            lblTable_Rak_Type2_2.Name = "lblTable_Rak_Type2_2";
-            lblTable_Rak_Type2_2.Size = new Size(77, 83);
-            lblTable_Rak_Type2_2.TabIndex = 7;
-            lblTable_Rak_Type2_2.Text = "2";
-            lblTable_Rak_Type2_2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // lblTable_Rak_Type2_1
-            // 
-            lblTable_Rak_Type2_1.AutoSize = true;
-            lblTable_Rak_Type2_1.BackColor = Color.Lime;
-            lblTable_Rak_Type2_1.Dock = DockStyle.Fill;
-            lblTable_Rak_Type2_1.Font = new Font("Vazirmatn RD FD", 12F);
-            lblTable_Rak_Type2_1.Location = new Point(264, 3);
-            lblTable_Rak_Type2_1.Name = "lblTable_Rak_Type2_1";
-            lblTable_Rak_Type2_1.Size = new Size(80, 83);
-            lblTable_Rak_Type2_1.TabIndex = 6;
-            lblTable_Rak_Type2_1.Text = "1";
-            lblTable_Rak_Type2_1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
             // 
@@ -698,10 +422,10 @@
             // label3
             // 
             label3.Font = new Font("Vazirmatn RD", 9.75F);
-            label3.Location = new Point(1029, 89);
+            label3.Location = new Point(904, 89);
             label3.Name = "label3";
             label3.RightToLeft = RightToLeft.Yes;
-            label3.Size = new Size(187, 32);
+            label3.Size = new Size(166, 32);
             label3.TabIndex = 2;
             label3.Text = "متن مورد نظر یا مطلوب(رفد):";
             label3.TextAlign = ContentAlignment.MiddleLeft;
@@ -710,7 +434,7 @@
             // 
             lblResult_Sum_Col_Row.BackColor = Color.FromArgb(192, 255, 192);
             lblResult_Sum_Col_Row.Font = new Font("Vazirmatn RD FD", 11.25F);
-            lblResult_Sum_Col_Row.Location = new Point(975, 344);
+            lblResult_Sum_Col_Row.Location = new Point(829, 344);
             lblResult_Sum_Col_Row.Name = "lblResult_Sum_Col_Row";
             lblResult_Sum_Col_Row.Size = new Size(241, 32);
             lblResult_Sum_Col_Row.TabIndex = 2;
@@ -721,7 +445,7 @@
             // 
             lblResult_RafdMeftah.BackColor = Color.FromArgb(192, 255, 192);
             lblResult_RafdMeftah.Font = new Font("Vazirmatn RD FD", 11.25F);
-            lblResult_RafdMeftah.Location = new Point(727, 302);
+            lblResult_RafdMeftah.Location = new Point(581, 302);
             lblResult_RafdMeftah.Name = "lblResult_RafdMeftah";
             lblResult_RafdMeftah.Size = new Size(241, 32);
             lblResult_RafdMeftah.TabIndex = 2;
@@ -732,7 +456,7 @@
             // 
             lblResult_Rafd.BackColor = Color.FromArgb(192, 255, 192);
             lblResult_Rafd.Font = new Font("Vazirmatn RD FD", 11.25F);
-            lblResult_Rafd.Location = new Point(975, 302);
+            lblResult_Rafd.Location = new Point(829, 302);
             lblResult_Rafd.Name = "lblResult_Rafd";
             lblResult_Rafd.Size = new Size(241, 32);
             lblResult_Rafd.TabIndex = 2;
@@ -743,7 +467,7 @@
             // 
             lblResult_RakMeftah.BackColor = Color.FromArgb(192, 255, 192);
             lblResult_RakMeftah.Font = new Font("Vazirmatn RD FD", 11.25F);
-            lblResult_RakMeftah.Location = new Point(727, 261);
+            lblResult_RakMeftah.Location = new Point(581, 261);
             lblResult_RakMeftah.Name = "lblResult_RakMeftah";
             lblResult_RakMeftah.Size = new Size(241, 32);
             lblResult_RakMeftah.TabIndex = 2;
@@ -754,7 +478,7 @@
             // 
             lblResult_Rak.BackColor = Color.FromArgb(192, 255, 192);
             lblResult_Rak.Font = new Font("Vazirmatn RD FD", 11.25F);
-            lblResult_Rak.Location = new Point(975, 261);
+            lblResult_Rak.Location = new Point(829, 261);
             lblResult_Rak.Name = "lblResult_Rak";
             lblResult_Rak.Size = new Size(241, 32);
             lblResult_Rak.TabIndex = 2;
@@ -765,11 +489,11 @@
             // 
             richTBRafd.BackColor = Color.Yellow;
             richTBRafd.Font = new Font("Vazirmatn RD FD", 12F);
-            richTBRafd.Location = new Point(727, 126);
+            richTBRafd.Location = new Point(371, 126);
             richTBRafd.Margin = new Padding(3, 4, 3, 4);
             richTBRafd.Name = "richTBRafd";
             richTBRafd.RightToLeft = RightToLeft.Yes;
-            richTBRafd.Size = new Size(489, 122);
+            richTBRafd.Size = new Size(699, 122);
             richTBRafd.TabIndex = 0;
             richTBRafd.Text = "جلب المال";
             // 
@@ -1116,7 +840,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1232, 500);
+            ClientSize = new Size(1094, 500);
             Controls.Add(tabControl1);
             Font = new Font("Vazirmatn RD FD", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -1128,8 +852,6 @@
             Load += Form1_Load;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
-            tableLayoutPanel3.ResumeLayout(false);
-            tableLayoutPanel3.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
             tabPage2.ResumeLayout(false);
@@ -1200,24 +922,6 @@
         private Label lblTable_Rak_8;
         private Label lblTable_Rak_1;
         private Label label22;
-        private TableLayoutPanel tableLayoutPanel3;
-        private Label lblTable_Rafd_Type2_8;
-        private Label lblTable_Rafd_Type2_1;
-        private Label lblTable_Rafd_Type2_2;
-        private Label lblTable_Rafd_Type2_7;
-        private Label lblTable_Rafd_Type2_3;
-        private Label lblTable_Rafd_Type2_6;
-        private Label lblTable_Rafd_Type2_5;
-        private Label lblTable_Rafd_Type2_4;
-        private Label lblTable_Rak_Type2_6;
-        private Label lblTable_Rak_Type2_3;
-        private Label lblTable_Rak_Type2_4;
-        private Label lblTable_Rak_Type2_5;
-        private Label lblTable_Rak_Type2_8;
-        private Label lblTable_Rak_Type2_7;
-        private Label lblTable_Rak_Type2_2;
-        private Label lblTable_Rak_Type2_1;
-        private Label label39;
         private Label label40;
     }
 }
